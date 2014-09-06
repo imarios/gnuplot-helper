@@ -4,12 +4,10 @@
 use strict;
 use warnings;
 
-
 ($#ARGV == 0) or die "Usage: $0 <plot_data>\n";
 my $infile = shift;
 
 # Some Gnuplot notes:
-
 #set terminal postscript eps color "Helvetica" 22
 #set output "average_degree.eps"
 
@@ -51,12 +49,12 @@ my $mode         = "color enhanced"; # or color
 my $log_usage    = "set yrange [0:]";
 
 # -------------
-my $tics        = "default";
+my $tics         = "default";
 my $range        = "default";
 
 my $injected_lines = ""; # add any fancy line here
 
-
+# Few colors that I know are nice
 my @Colors = ( "n/a", 9, 1, 3, 7, -1, 0, 10, 11, 12, 13, 14, 15 );
 
 open(IN_FILE, "$infile" ) || die("Could not open file: $!");
@@ -154,7 +152,7 @@ close(IN_FILE);
        
 
 
-#test violation e.g. using lines with point sizes 
+#TODO: test violation e.g. using lines with point sizes 
 
 
 my $plot_out_name = "$plot_name.eps";
