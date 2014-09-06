@@ -1,17 +1,17 @@
 #!/usr/bin/perl -w
+# Creation Date: Dec 5th PST 2007
 
 use strict;
 use warnings;
-# About:
-# Creation Date: ? PST 2007
-
-#set terminal postscript eps color "Helvetica" 22
-#set output "average_degree.eps"
 
 
 ($#ARGV == 0) or die "Usage: $0 <plot_data>\n";
 my $infile = shift;
 
+# Some Gnuplot notes:
+
+#set terminal postscript eps color "Helvetica" 22
+#set output "average_degree.eps"
 
 #1    +              7   (f) circle
 #2    cross          8   (o) triangle
@@ -33,7 +33,6 @@ my $infile = shift;
 my @fields;
 my $line;
 my %Data = ();
-
 
 my $USE_NICE_COLORS_FLAG = 0;
 
