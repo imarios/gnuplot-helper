@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Gnuplot-Helper : A Perl script that generates decent looking gnuplot scripts. ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Gnuplot-Helper</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/imarios/gnuplot-helper">View on GitHub</a>
+
+          <h1 id="project_title">Gnuplot-Helper</h1>
+          <h2 id="project_tagline">A Perl script that generates decent looking gnuplot scripts. </h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/imarios/gnuplot-helper/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/imarios/gnuplot-helper/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="gnuplot-helper" class="anchor" href="#gnuplot-helper" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>gnuplot-helper</h1>
+
+<p>A Perl script that generates gnuplot scripts from a simpler custom data format. It only requires gnuplot. If you want the generated plots to be in PDF format, it also requires the epstopdf program.    </p>
+
+<p><strong>Note:</strong> The script currently just creates line plots (not bar or pie charts).</p>
+
+<h3>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h3>
+
+<p>To create a gnuplot (.gnu) script, you need to first write a description file (see an example <a href="/examples/example_of_plot_data.data">here</a>). Here is a list of common options.</p>
+
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name [txt]</td>
+<td>The name of the plot</td>
+</tr>
+<tr>
+<td>title [txt]</td>
+<td>The title of the plot</td>
+</tr>
+<tr>
+<td>y-label [txt]</td>
+<td>Label for y-axis</td>
+</tr>
+<tr>
+<td>x-label [txt]</td>
+<td>Label for x-axis</td>
+</tr>
+<tr>
+<td>use-log</td>
+<td>Makes the x-axis to be in log scale</td>
+</tr>
+<tr>
+<td>use-lenget [txt]</td>
+<td>Add a legent</td>
+</tr>
+<tr>
+<td>range [txt]</td>
+<td>Range of x-axis</td>
+</tr>
+<tr>
+<td>mode [txr]</td>
+<td>color or mono</td>
+</tr>
+<tr>
+<td>use-nice-colors</td>
+<td>Better line colors</td>
+</tr>
+<tr>
+<td>tics</td>
+<td>spacing for the x-tics</td>
+</tr>
+<tr>
+<td>add [text]</td>
+<td>Add this gnuplot command</td>
+</tr>
+<tr>
+<td>lsize</td>
+<td>Line size (e.g., 2)</td>
+</tr>
+<tr>
+<td>psize</td>
+<td>Point size (e.g., 2)</td>
+</tr>
+</tbody>
+</table>
+
+<p>To run: </p>
+
+<div class="highlight highlight-source-shell"><pre><span class="pl-k">&gt;</span> plot_data.pl myfile.data</pre></div>
+
+<h3>
+<a id="plot-examples" class="anchor" href="#plot-examples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Plot examples</h3>
+
+<p><img src="/examples/AccuracyPlot.jpg" alt="AccuracyPlot.pdf" title="Optional Title"></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Gnuplot-Helper maintained by <a href="https://github.com/imarios">imarios</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
